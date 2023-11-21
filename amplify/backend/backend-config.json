@@ -1,0 +1,78 @@
+{
+  "api": {
+    "apiSupply": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "circulationSupply"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "totalSupply"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "circulationSupply": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "totalSupply": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "providerPlugin": "awscloudformation",
+      "service": "S3AndCloudFront"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_circulationSupply_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "circulationSupply"
+        }
+      ]
+    },
+    "AMPLIFY_function_circulationSupply_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "circulationSupply"
+        }
+      ]
+    },
+    "AMPLIFY_function_totalSupply_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "totalSupply"
+        }
+      ]
+    },
+    "AMPLIFY_function_totalSupply_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "totalSupply"
+        }
+      ]
+    }
+  }
+}

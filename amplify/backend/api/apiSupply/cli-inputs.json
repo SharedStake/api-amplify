@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/circulationSupply": {
+      "name": "/circulationSupply",
+      "lambdaFunction": "circulationSupply",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/totalSupply": {
+      "name": "/totalSupply",
+      "lambdaFunction": "totalSupply",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

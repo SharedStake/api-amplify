@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sgtapi-dev-152636-authRole",
+      "UnauthRoleArn": "arn:aws:iam::962479927324:role/amplify-sgtapi-dev-152636-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::962479927324:role/amplify-sgtapi-dev-152636-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-sgtapi-dev-152636-deployment",
+      "UnauthRoleName": "amplify-sgtapi-dev-152636-unauthRole",
+      "StackName": "amplify-sgtapi-dev-152636",
+      "StackId": "arn:aws:cloudformation:us-east-2:962479927324:stack/amplify-sgtapi-dev-152636/1dee2cd0-82d4-11ee-acc8-0220b458b04b",
+      "AmplifyAppId": "d2ifopgmn29x7m"
+    },
+    "categories": {
+      "function": {
+        "circulationSupply": {
+          "deploymentBucketName": "amplify-sgtapi-dev-152636-deployment",
+          "s3Key": "amplify-builds/circulationSupply-767868596d3769774e4b-build.zip"
+        },
+        "totalSupply": {
+          "deploymentBucketName": "amplify-sgtapi-dev-152636-deployment",
+          "s3Key": "amplify-builds/totalSupply-436c6f4d594f4674374d-build.zip"
+        }
+      },
+      "api": {
+        "apiSupply": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}
